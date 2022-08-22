@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: auto;
 }
 
@@ -42,7 +42,7 @@ li {
   cursor: pointer;
 }
 
-/******* Common Styling *******/
+/* ****** Common Styling ****** */
 /* h2-dark */
 .h2-dark {
   text-align: center;
@@ -77,6 +77,15 @@ li {
   width: 12rem;
 }
 
+/* hamburger */
+.hamburger {
+  display: none;
+}
+.hamburger .menu-icon {
+  font-size: 2.2rem;
+  color: var(--white);
+}
+
 /* navmenu */
 .nav-menu {
   margin-left: auto;
@@ -102,7 +111,6 @@ li {
   color: var(--white);
   border: 1px solid #8d8d8d;
   margin-right: 0;
-  margin-left: 2rem;
   padding: 1.2rem 5rem;
 }
 
@@ -133,7 +141,7 @@ li {
 }
 
 .head-text h1 {
-  font-size: 7rem;
+  font-size: 6.5rem;
   color: var(--white);
   margin-bottom: 3rem;
 }
@@ -152,7 +160,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   background-color: var(--white);
 }
 
@@ -444,4 +452,593 @@ form input {
   color: var(--mid-gray);
   margin-bottom: 2rem;
   font-weight: 600;
+}
+
+/******* media query for smaller device *******/
+@media only screen and (max-width: 767px) {
+  /* ****** Common Styling ****** */
+  /* h2-dark */
+  .h2-dark {
+    text-align: left;
+    font-size: 2.8rem;
+    color: var(--dark-gray);
+  }
+
+  /* p-dark */
+  .p-dark {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--mid-gray);
+  }
+
+  /* ****** Common Styling End****** */
+
+  /******* ShowCase *******/
+  .showcase {
+    padding: 2% 2% 4rem;
+  }
+
+  .navbar {
+    padding: 0;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+  }
+
+  /* navlogo */
+  .logo {
+    width: 9rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  /*** Header ***/
+  .head {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* head img */
+  .head-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .head-img img {
+    height: 30rem;
+  }
+
+  /* head content */
+  .head-text {
+    width: 100%;
+  }
+
+  .head-text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .head-text .p-light {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* form */
+  form {
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  form img {
+    width: 1.8rem;
+  }
+
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .form-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.2rem 2rem;
+  }
+
+  /*******Section 1 Acchivement*******/
+  .achivement {
+    padding: 4rem 2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* h2 */
+  .achivement .h2-dark {
+    width: 100%;
+    margin: 0 auto 3rem;
+  }
+
+  /* work done */
+  .work-done {
+    width: 100%;
+    order: 2;
+  }
+
+  .common-work {
+    width: 20%;
+    text-align: center;
+  }
+
+  /* h2 black */
+  .h2-black {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  /* p-dark */
+  .common-work .p-dark {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .achivement-img {
+    margin-bottom: 2rem;
+  }
+
+  .achivement-img img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  /******* Section-2 Benefits  *******/
+  .benefits {
+    padding: 0rem 2% 4rem;
+  }
+
+  .benefits .h2-dark {
+    width: 100%;
+    margin: 0 auto 4rem;
+  }
+
+  /* benefits wrapper */
+  .common-benefit {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  /* common benefits content */
+  .common-benefit .content {
+    width: 100%;
+    order: 2;
+  }
+
+  .h3-dark {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .content .p-dark {
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-style-common {
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  /* common benefits img */
+  .common-benefit .benefit-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .benefit-1 .benefit-img img,
+  .benefit-2 .benefit-img img,
+  .benefit-3 .benefit-img img {
+    height: 30rem;
+  }
+
+  /*******Section-3 Team  *******/
+  .team {
+    padding: 0rem 2% 4rem;
+  }
+
+  /* team header */
+  .team-header {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .team-header .h3-dark {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+  }
+
+  .team-header .p-dark {
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 2.5rem;
+  }
+
+  /*** team wrapper ***/
+  .team-wrapper {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .common-team {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .common-team img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 1rem;
+  }
+
+  .common-team .h4-dark {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .common-team .p-dark {
+    line-height: 2.5rem;
+  }
+
+  /*********** Footer ***********/
+  .foot {
+    padding: 4rem 2% 0;
+  }
+
+  /* logo and social icon wrapper */
+  .logo-social-wrapper {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .hr {
+    margin-bottom: 3rem;
+  }
+
+  .logo-social-wrapper .foot-logo {
+    width: 8rem;
+    margin-bottom: 3rem;
+  }
+
+  .common-icon {
+    background-color: var(--icon-bg);
+    margin: 0 2rem;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .common-icon img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  /*** foot wrapper ***/
+  .foot-wrapper {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .common-foot {
+    margin-bottom: 3rem;
+    width: 48%;
+  }
+}
+
+/******* media query for medium device *******/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* ****** Common Styling ****** */
+  /* h2-dark */
+  .h2-dark {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  /* p-dark */
+  .p-dark {
+    font-size: 1.6rem;
+  }
+
+  /* ****** Common Styling End****** */
+
+  /*** Header ***/
+
+  .head-img img {
+    height: 35rem;
+  }
+
+  .head-text h1 {
+    font-size: 3.3rem;
+  }
+
+  .head-text .p-light {
+    font-size: 1.6rem;
+  }
+
+  /* form */
+  .form-btn {
+    font-size: 1.3rem;
+  }
+
+  /*******Section 1 Acchivement*******/
+
+  /* work done */
+  .work-done {
+    flex-wrap: wrap;
+  }
+
+  /* h2 black */
+  .h2-black {
+    font-size: 2.6rem;
+  }
+
+  /* p-dark */
+  .common-work .p-dark {
+    margin-bottom: 4rem;
+  }
+
+  .achivement-img img {
+    height: 35rem;
+  }
+
+  /******* Section-2 Benefits  *******/
+
+  .benefit-1 .benefit-img img,
+  .benefit-2 .benefit-img img,
+  .benefit-3 .benefit-img img {
+    height: 35rem;
+  }
+
+  /*******Section-3 Team  *******/
+
+  .team-header .h3-dark {
+    font-size: 3rem;
+  }
+
+  .team-header .p-dark {
+    font-size: 1.7rem;
+  }
+
+  /*** team wrapper ***/
+
+  .common-team img {
+    height: 35rem;
+  }
+
+  .common-team .h4-dark {
+    font-size: 2.2rem;
+  }
+}
+
+/******* media query for Large device *******/
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  /* ****** Common Styling ****** */
+  /* h2-dark */
+  .h2-dark {
+    text-align: center;
+    font-size: 3.4rem;
+    color: var(--dark-gray);
+  }
+
+  /* p-dark */
+  .p-dark {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--mid-gray);
+  }
+
+  /* ****** Common Styling End****** */
+
+  /******* ShowCase *******/
+  .showcase {
+    padding: 2% 2% 4rem;
+  }
+
+  .navbar {
+    padding: 0;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+  }
+
+  /* navlogo */
+  .logo {
+    width: 9rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  /*** Header ***/
+  .head {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* head img */
+  .head-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .head-img img {
+    height: 45rem;
+  }
+
+  /* head content */
+  .head-text {
+    width: 100%;
+  }
+
+  .head-text h1 {
+    font-size: 3.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .head-text .p-light {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  /* form */
+  form {
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  form img {
+    width: 1.8rem;
+  }
+
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .form-btn {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.2rem 2rem;
+  }
+
+  /*******Section 1 Acchivement*******/
+  .achivement {
+    padding: 4rem 2%;
+  }
+
+  /* h2 */
+  .achivement .h2-dark {
+    width: 100%;
+    margin: 0 auto 3rem;
+  }
+
+  /* h2 black */
+  .h2-black {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  /* p-dark */
+  .common-work .p-dark {
+    margin-bottom: 4rem;
+  }
+
+  .achivement-img {
+    margin-bottom: 2rem;
+  }
+
+  .achivement-img img {
+    height: 40rem;
+  }
+
+  /******* Section-2 Benefits  *******/
+  .benefits {
+    padding: 0rem 2% 4rem;
+  }
+
+  .benefits .h2-dark {
+    width: 100%;
+    margin: 0 auto 4rem;
+  }
+
+  /* benefits wrapper */
+  .common-benefit {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  /* common benefits content */
+  .common-benefit .content {
+    width: 100%;
+    order: 2;
+  }
+
+  .h3-dark {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .content .p-dark {
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-style-common {
+    padding: 1.2rem 3.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  /* common benefits img */
+  .common-benefit .benefit-img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .benefit-1 .benefit-img img,
+  .benefit-2 .benefit-img img,
+  .benefit-3 .benefit-img img {
+    height: 45rem;
+    object-position: top center;
+  }
+
+  /*******Section-3 Team  *******/
+  .team {
+    padding: 0rem 2% 4rem;
+  }
+
+  /* team header */
+  .team-header {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .team-header .h3-dark {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 3.4rem;
+  }
+
+  .team-header .p-dark {
+    font-size: 1.7rem;
+    width: 100%;
+    line-height: 2.5rem;
+  }
+
+  /*********** Footer ***********/
+  .foot {
+    padding: 4rem 2% 0;
+  }
+
+  /*** foot wrapper ***/
+  .foot-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .common-foot {
+    margin-bottom: 3rem;
+    width: 30%;
+  }
 }
